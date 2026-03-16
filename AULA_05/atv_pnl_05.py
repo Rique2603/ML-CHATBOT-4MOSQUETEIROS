@@ -1,13 +1,13 @@
-# Exercício: criar um contador de palavras, aqui você vai precisar construir e completar o código
+# ATIVIDADE 5 - Contador de Palavras
+# Objetivo: Contar quantas palavras existem em um texto
 
 texto = "machine learning é importante para inteligência artificial"
 
-# TODO: dividir o texto em palavras
-palavras = ___________
+# Dividir o texto em palavras (tokenização simples)
+palavras = texto.split()
 
-# TODO: contar quantas palavras existem
-quantidade = ___________
+# Contar quantas palavras existem
+quantidade = len(palavras)
 
+# Mostrar resultado
 print("Número de palavras:", quantidade)
-
-#Resultado esperado - Número de palavras: 7

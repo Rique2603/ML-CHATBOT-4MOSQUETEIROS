@@ -1,13 +1,15 @@
+# ATIVIDADE 6 - Frequência de Palavras
+# Objetivo: Contar a frequência de cada palavra em um texto
+
 from collections import Counter
 
 texto = "chatbot chatbot inteligência artificial chatbot aprendizado"
 
-# TODO: transformar texto em lista de palavras
-palavras = ___________
+# Transformar texto em lista de palavras (tokenização simples)
+palavras = texto.split()
 
-# TODO: calcular frequência
-frequencia = ___________
+# Calcular frequência de cada palavra
+frequencia = Counter(palavras)
 
+# Mostrar resultado
 print(frequencia)
-
-# Resultado esperado: {'chatbot':3, 'inteligência':1, 'artificial':1, 'aprendizado':1}

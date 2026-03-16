@@ -1,6 +1,10 @@
+# ATIVIDADE 7 - Classificador Simples de Intenção
+# Objetivo: Detectar a intenção do usuário a partir de frases
+
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
+# Conjunto de frases de treinamento
 frases = [
     "quero comprar produto",
     "desejo fazer compra",
@@ -10,6 +14,7 @@ frases = [
     "vocês abrem sábado"
 ]
 
+# Intenções correspondentes
 intencoes = [
     "comprar",
     "comprar",
@@ -19,26 +24,24 @@ intencoes = [
     "horario"
 ]
 
-# TODO criar vetorizador
-vetorizador = ___________
+# Criar vetorizador
+vetorizador = CountVectorizer()
 
-# TODO transformar frases em vetores
-X = ___________
+# Transformar frases em vetores
+X = vetorizador.fit_transform(frases)
 
-# TODO treinar modelo Naive Bayes
-modelo = ___________
+# Treinar modelo Naive Bayes
+modelo = MultinomialNB()
+modelo.fit(X, intencoes)
 
-# TODO pedir frase do usuário
+# Pedir frase do usuário
 entrada = input("Digite sua mensagem: ")
 
-# TODO transformar entrada em vetor
-entrada_vetor = ___________
+# Transformar entrada em vetor
+entrada_vetor = vetorizador.transform([entrada])
 
-# TODO prever intenção
-predicao = ___________
+# Prever intenção
+predicao = modelo.predict(entrada_vetor)
 
+# Mostrar resultado
 print("Intenção detectada:", predicao[0])
-
-#Resultado esperado:
-# Digite sua mensagem: quero saber horário
-# Intenção detectada: horario
