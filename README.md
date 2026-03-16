@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Machine Learning e chatbot 2026 - turma de segunda-feira - Ciências da Computação (CDC) - TOTAL 15 AULAS
 
 - Fevereiro - 2 aulas (Atividades AC-1(0,5 ponto))
@@ -20,3 +21,6 @@ SPRINT 2:
 SPRINT 3:
 
 SPRINT 4:
+=======
+# ML-CHATBOT-4MOSQUETEIROS
+>>>>>>> 6804edb292012f041994b84ffc9ab475ca4930e4
